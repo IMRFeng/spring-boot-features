@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head>
+    <title>Spring Boot Devtools</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <script src="webjars/jquery/3.2.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="hello" th:text="${helloMessage}"></div>
+<div class="index">Do you love me?</div>
+<div class="index" id="api"></div>
+
+<script type="application/javascript">
+    (function ($) {
+        $("#api").load("/api");
+    }(jQuery));
+</script>
+</body>
+</html>
+
+
+
