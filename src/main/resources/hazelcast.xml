@@ -7,7 +7,7 @@
         <password>micro-services-pwd</password>
     </group>
 
-    <map name="userInfo">
+    <map name="repositories">
         <time-to-live-seconds>315360000</time-to-live-seconds> <!-- Maximum time in seconds for each entry to stay in the map -->
         <max-idle-seconds>14400</max-idle-seconds> <!-- Maximum time in seconds for each entry to stay idle in the map. 4 hours here -->
         <eviction-policy>LFU</eviction-policy> <!-- The entries least frequently used will be evicted -->
