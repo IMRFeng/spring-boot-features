@@ -8,16 +8,13 @@
 </head>
 <body>
 <div class="hello" th:text="${helloMessage}"></div>
-<div class="index">Do you love me?</div>
-<div class="index" id="api"></div>
+<div class="index">Hello World!</div>
+<div class="index" id="ajaxApi"></div>
 
 <script type="application/javascript">
     (function ($) {
-        $("#api").load("/api");
+        $("#ajaxApi").load("/ajaxApi");
     }(jQuery));
 </script>
 </body>
 </html>
-
-
-
